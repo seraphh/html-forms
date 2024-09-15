@@ -92,6 +92,28 @@
     </style>
 </head>
 <body>
-    
+    <main>
+        <form action="submit.php" method="post">
+            <input type="text" name="first_name" placeholder="First Name" value="" class="grid-input" required>
+            <input type="text" name="last_name" placeholder="Last Name"   value="" class="grid-input" required>
+            <input type="email" name="email" placeholder="User Email"     value="" class="grid-input" required>
+            <input type="password" name="password" placeholder="User Password" value="" class="grid-input" required>
+
+            <input type="date" name="date" min="<?php echo date("Y-m-d"); ?>" required>
+
+            <input type="checkbox" name="checkbox[]" id="" value="java"><label for="checkbox">Java</label>
+            <input type="checkbox" name="checkbox[]" id="" value="c++"><label for="checkbox">C++</label>
+            <input type="checkbox" name="checkbox[]" id="" value="php"><label for="checkbox">PHP</label>
+
+            <input type="radio" name="year-level" id="" value="1"><label for="year-level">1</label>
+            <input type="radio" name="year-level" id="" value="2"><label for="year-level">2</label>
+            <input type="radio" name="year-level" id="" value="3"><label for="year-level">3</label>
+            <input type="radio" name="year-level" id="" value="4"><label for="year-level">4</label>
+
+            <input type="submit" value="Click Me!"> 
+            <input type="reset" value="This is a reset">
+
+        </form>
+    </main>
 </body>
 </html> 
