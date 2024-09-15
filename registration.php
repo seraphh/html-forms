@@ -112,6 +112,7 @@
 
             <input type="submit" value="Click Me!"> 
             <input type="reset" value="This is a reset">
+            <input type="button" value="This is a button">
 
         </form>
     </main>
